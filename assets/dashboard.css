@@ -1,0 +1,219 @@
+/* == Global == */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f1f5f9;
+  display: flex;
+}
+
+/* == Sidebar == */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  background: #1e293b;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.sidebar-header {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  background-color: #111827;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #374151;
+}
+
+.sidebar-menu {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  border-bottom: 1px solid #374151;
+}
+
+.sidebar-menu a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: 0.2s;
+  font-size: 15px;
+}
+
+.sidebar-menu a::before {
+  content: "⮞";
+  display: inline-block;
+  transition: 0.3s;
+  opacity: 0.6;
+}
+
+.sidebar-menu a:hover {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+.sidebar-menu a:hover::before {
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+.sidebar-menu a.active {
+  background-color: #3b82f6;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* == Main Content == */
+.main-content {
+  margin-left: 240px;
+  padding: 25px;
+  flex: 1;
+}
+
+/* == Topbar == */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.topbar input {
+  width: 300px;
+  padding: 8px 15px;
+  border-radius: 30px;
+  border: 1px solid #cbd5e1;
+}
+
+.profile-circle {
+  background: #e0e7ff;
+
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* == Headings & Breadcrumb == */
+h2, .dashboard-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.breadcrumb {
+  font-size: 14px;
+
+}
+
+/* == Cards & Stats == */
+.stats {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+.card {
+  background: white;
+  padding: 15px;
+  flex: 1;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  transition: 0.2s;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.card span {
+  font-size: 24px;
+}
+
+/* == Table == */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #fff;
+}
+th, td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+th {
+  background-color: #334155;
+  color: white;
+}
+tr:hover {
+  background-color: #f9fafb;
+}
+
+/* == Dokumen Link == */
+.dokumen-link {
+  color: #2563eb;
+  text-decoration: none;
+}
+.dokumen-link:hover {
+  text-decoration: underline;
+}
+
+/* == Status == */
+.status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  text-transform: capitalize;
+}
+.status.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+.status.verified {
+  background: #d1e7ff;
+  color: #084298;
+}
+.status.ditolak {
+  background: #f8d7da;
+  color: #842029;
+}
+.status.diterima {
+  background: #d1e7dd;
+  color: #0f5132;
+}
+
+/* == Action Buttons == */
+.btn-edit, .btn-hapus {
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  color: white;
+  transition: 0.2s;
+}
+.btn-edit {
+  background-color: #0d6efd;
+}
+.btn-hapus {
+  background-color: #dc3545;
+}
+.btn-edit:hover {
+  background-color: #0b5ed7;
+}
+.btn-hapus:hover {
+  background-color: #bb2d3b;
+}

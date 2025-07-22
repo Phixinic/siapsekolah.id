@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daftar - Siapsekolah.id</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Siapsekolah.id</h1>
+  </header>
+
+  <div class="login-container">
+    <div class="login-card">
+      <h2>Selamat Datang</h2>
+      <p>Silahkan daftar untuk melanjutkan</p>
+
+      <div class="tab">
+        <span class="disabled"><a class="no-link" href="login.html">Login</a></span>
+        <span class="active"><a href="daftar.html">Sign Up</a></span>
+      </div>
+
+      <form action="proses_daftar.php" method="POST">
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="konfirmasi_password">Konfirmasi Password</label>
+        <input type="password" id="konfirmasi_password" name="konfirmasi_password" required>
+
+        <button type="submit" class="btn-login">Daftar</button>
+
+        <p class="syarat">
+          Dengan melakukan pendaftaran, Anda menyetujui 
+          <a href="#">Syarat & Ketentuan</a> dan 
+          <a href="#">Kebijakan Privasi</a> kami.
+        </p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

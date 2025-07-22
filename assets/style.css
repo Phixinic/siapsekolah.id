@@ -1,0 +1,391 @@
+/* ==== GLOBAL RESET & FONT ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+/* ==== HEADER ==== */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* ==== HERO SECTION ==== */
+.hero {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto 25px auto;
+  font-size: 16px;
+}
+
+.btn-daftar {
+  background: #f44336;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+
+.btn-daftar:hover {
+  background: #d32f2f;
+}
+
+/* ==== TENTANG SECTION ==== */
+.tentang {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.tentang h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.garis-biru {
+  width: 80px;
+  height: 4px;
+  background: #6a11cb;
+  margin: 0 auto 40px auto;
+  border-radius: 2px;
+}
+
+.fitur-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.fitur-box {
+  background: white;
+  border-radius: 10px;
+  padding: 30px 20px;
+  width: 280px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.fitur-box .bulat {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  border-radius: 50%;
+  margin: 0 auto 15px auto;
+}
+
+.fitur-box h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.fitur-box p {
+  font-size: 14px;
+  color: #444;
+}
+
+/* ==== LOGIN PAGE ==== */
+.header {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  padding: 20px;
+  text-align: left;
+  color: white;
+  font-size: 24px;
+  padding-left: 40px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.login-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-card h2 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.login-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.tab span {
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tab .active {
+  color: #5a4efc;
+  border-bottom: 3px solid #5a4efc;
+}
+
+.tab .disabled {
+  color: #bbb;
+  border-bottom: 3px solid #ccc;
+  text-decoration: none;
+}
+
+.no-link {
+    text-decoration: none;
+    color: #bbb;
+}
+
+form {
+  text-align: left;
+}
+
+label {
+  font-weight: 500;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.opsi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.opsi a {
+  text-decoration: none;
+  color: #5a4efc;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.divider {
+  text-align: center;
+  color: #999;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.social-buttons button {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.syarat {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+  color: #777;
+}
+
+.syarat a {
+  color: #5a4efc;
+  text-decoration: none;
+}
+
+/* == Dashboard == */
+
+.sidebar {
+  width: 220px;
+  background: linear-gradient(#0b3d91, #1d5aa8);
+  color: white;
+  padding: 20px;
+  min-height: 100vh;
+}
+.sidebar h2, .sidebar h3 { margin: 0 0 15px; }
+.sidebar ul { list-style: none; padding: 0; }
+.sidebar ul li { margin: 10px 0; }
+.sidebar ul li a { color: white; text-decoration: none; }
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background: #f5f6f8;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topbar input {
+  width: 300px;
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+.profile-circle {
+  background: #d0d4ff;
+  color: #222;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-title {
+  font-size: 24px;
+  margin: 20px 0 10px;
+}
+.breadcrumb {
+  font-size: 14px;
+  color: #777;
+}
+
+.stats {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+.card {
+  background: white;
+  padding: 15px;
+  flex: 1;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.card span {
+  font-size: 24px;
+}
+
+.charts {
+  display: flex;
+  gap: 15px;
+}
+.chart-box {
+  background: white;
+  padding: 20px;
+  flex: 1;
+  min-height: 150px;
+  border-radius: 10px;
+}
+
+.latest {
+  margin-top: 30px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+thead {
+  background: #eee;
+}
+td, th {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9em;
+}
+.status.pending {
+  background: #ffeb9b;
+  color: #a47c00;
+}
+.status.verified {
+  background: #d1e7ff;
+  color: #005cbf;
+}
